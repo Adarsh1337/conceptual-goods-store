@@ -1,0 +1,300 @@
+/* Conceptual Goods Store - Minimalist Design System */
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-off-white: #FAFAF9;
+    --color-charcoal: #2D2D2D;
+    --color-gray: #6B6B6B;
+    --spacing-xs: 8px;
+    --spacing-s: 16px;
+    --spacing-m: 24px;
+    --spacing-l: 48px;
+    --spacing-xl: 96px;
+    --spacing-xxl: 160px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-charcoal);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.5rem; }
+
+/* Header & Navigation */
+header {
+    padding: var(--spacing-m) var(--spacing-l);
+    border-bottom: 1px solid #EFEFEF;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-m);
+}
+
+.nav-links a {
+    color: var(--color-charcoal);
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-l) var(--spacing-xl);
+}
+
+.hero h1 {
+    margin-bottom: var(--spacing-m);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--color-gray);
+    font-weight: 300;
+}
+
+/* Products Section */
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-l);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-l);
+}
+
+.product-card {
+    background: var(--color-white);
+    border: 1px solid #EFEFEF;
+    padding: var(--spacing-l);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--product-color, #E8F4F8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+}
+
+.product-card[data-color="#E8F4F8"] { --product-color: #E8F4F8; }
+.product-card[data-color="#F5E6D3"] { --product-color: #F5E6D3; }
+.product-card[data-color="#E8F5E9"] { --product-color: #E8F5E9; }
+.product-card[data-color="#FFF4E6"] { --product-color: #FFF4E6; }
+.product-card[data-color="#FFE8E8"] { --product-color: #FFE8E8; }
+
+.product-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-s);
+    opacity: 0.8;
+}
+
+.product-card h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.product-tagline {
+    font-style: italic;
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-s);
+    font-size: 0.875rem;
+}
+
+.product-description {
+    color: var(--color-charcoal);
+    margin-bottom: var(--spacing-m);
+    line-height: 1.7;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-m);
+    padding-top: var(--spacing-m);
+    border-top: 1px solid #F0F0F0;
+}
+
+.price {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--color-charcoal);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+/* About Section */
+.about {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-l);
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: var(--spacing-m);
+}
+
+.about ul {
+    list-style: none;
+    margin: var(--spacing-m) 0;
+}
+
+.about li {
+    margin: var(--spacing-xs) 0;
+}
+
+.philosophy {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: var(--spacing-l);
+    color: var(--color-gray);
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #EFEFEF;
+    padding: var(--spacing-l);
+    text-align: center;
+    margin-top: var(--spacing-xxl);
+}
+
+footer p {
+    color: var(--color-gray);
+    font-size: 0.875rem;
+    margin-bottom: var(--spacing-s);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-m);
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--color-charcoal);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-m) var(--spacing-l);
+    }
+    
+    .products {
+        padding: var(--spacing-l) var(--spacing-m);
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-m);
+    }
+    
+    .about {
+        padding: var(--spacing-l) var(--spacing-m);
+    }
+    
+    .philosophy {
+        font-size: 1.25rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-charcoal);
+    color: var(--color-white);
+}
