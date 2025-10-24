@@ -1,0 +1,97 @@
+[
+  {
+    "id": "peace",
+    "name": "Peace",
+    "slug": "peace",
+    "tagline": "For the hurried mind",
+    "price": 4.99,
+    "currency": "USD",
+    "description": "A digital token of tranquility. A reminder to pause, breathe, and find your center.",
+    "longDescription": "In a world that demands constant motion, Peace offers stillness. This conceptual experience is delivered as a beautifully designed email containing poetic reflections, a guided meditation timer, and visual serenity.",
+    "color": "#E8F4F8",
+    "emailSubject": "Your Moment of Peace Has Arrived",
+    "contentSnippet": "In a silent grove, a single leaf floats to the ground. All is calm. In this moment, allow yourself the same gentle descent.",
+    "interactiveElement": {
+      "type": "meditation-timer",
+      "duration": 60,
+      "description": "60-second guided stillness"
+    },
+    "tags": ["mindfulness", "calm", "meditation", "tranquility"]
+  },
+  {
+    "id": "patience",
+    "name": "Patience",
+    "slug": "patience",
+    "tagline": "When time feels scarce",
+    "price": 4.99,
+    "currency": "USD",
+    "description": "A gentle reminder that not everything must happen now. Some things unfold in their own time.",
+    "longDescription": "Patience is not passive waiting—it's active trust in the process. This experience includes philosophical reflections and a breathing exercise designed to recalibrate your relationship with time.",
+    "color": "#F5E6D3",
+    "emailSubject": "Patience: Yours to Keep",
+    "contentSnippet": "The oak tree does not rush its growth. It knows that strength comes from steady, patient becoming.",
+    "interactiveElement": {
+      "type": "breathing-exercise",
+      "duration": 90,
+      "description": "4-7-8 breathing pattern"
+    },
+    "tags": ["time", "growth", "mindfulness", "calm"]
+  },
+  {
+    "id": "luck",
+    "name": "Luck",
+    "slug": "luck",
+    "tagline": "A shift in perspective",
+    "price": 4.99,
+    "currency": "USD",
+    "description": "Not a charm, but a lens. A psychological reframe to help you notice the good already present.",
+    "longDescription": "Luck is often just recognition. This conceptual product offers a cognitive exercise to help you perceive opportunity, connection, and possibility in everyday moments.",
+    "color": "#E8F5E9",
+    "emailSubject": "Your Luck Has Arrived",
+    "contentSnippet": "A door opens only for those who notice it. Today, choose to see the doors.",
+    "interactiveElement": {
+      "type": "gratitude-prompt",
+      "duration": 120,
+      "description": "Write down three small fortunes from today"
+    },
+    "tags": ["perspective", "gratitude", "opportunity", "mindset"]
+  },
+  {
+    "id": "creativity",
+    "name": "Creativity",
+    "slug": "creativity",
+    "tagline": "Unlock inspiration",
+    "price": 4.99,
+    "currency": "USD",
+    "description": "A spark. A provocation. An invitation to see the world with fresh eyes and make something new.",
+    "longDescription": "Creativity isn't found—it's cultivated. This experience includes artistic prompts, philosophical questions, and a creative exercise designed to break through mental blocks.",
+    "color": "#FFF4E6",
+    "emailSubject": "A Spark of Creativity, Delivered",
+    "contentSnippet": "Every masterpiece begins with permission to play. Today, you have that permission.",
+    "interactiveElement": {
+      "type": "creative-prompt",
+      "duration": 300,
+      "description": "5-minute creative challenge"
+    },
+    "tags": ["inspiration", "art", "imagination", "innovation"]
+  },
+  {
+    "id": "courage",
+    "name": "Courage",
+    "slug": "courage",
+    "tagline": "Face what matters",
+    "price": 4.99,
+    "currency": "USD",
+    "description": "Not the absence of fear, but the decision to move forward anyway. A reminder of your strength.",
+    "longDescription": "Courage is a muscle. This conceptual experience offers philosophical reflections on bravery, vulnerability, and the power of showing up even when it's hard.",
+    "color": "#FFE8E8",
+    "emailSubject": "Your Courage Awaits",
+    "contentSnippet": "The hero and the coward feel the same fear. The difference is in what they do next.",
+    "interactiveElement": {
+      "type": "commitment-exercise",
+      "duration": 180,
+      "description": "Define one brave action for today"
+    },
+    "tags": ["strength", "bravery", "vulnerability", "action"]
+  }
+]
